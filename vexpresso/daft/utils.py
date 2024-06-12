@@ -113,7 +113,7 @@ class Wrapper:
         raise AttributeError(name)
 
     def _wrap(self, func, args, kwargs):
-        if type(func) == MethodType:
+        if type(func) == MethodType:  # noqa
             daft_df = func(*args, **kwargs)
         else:
             daft_df = func(self.collection.daft_df, *args, **kwargs)

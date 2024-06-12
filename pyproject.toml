@@ -10,8 +10,11 @@ authors = [
     { name = "Shyam Sudhakaran", email = "shyamsnair@protonmail.com" }
 ]
 dependencies = [
-    'numpy',
-    'getdaft==0.1.5',
-    'pandas',
-    'pyarrow',
+    "numpy",
+    "getdaft",
+    "pandas",
+    "pyarrow"
+]
+[project.optional-dependencies]
+dev = [
 ]
